@@ -1,0 +1,30 @@
+{
+    "SOURCE_MONGODB": {
+        "host": "demo.djbdu.mongodb.net",
+        "user": "demo-user",
+        "password": "4br1L2021",
+        "database": "sample_analytics",
+        "collection": "customers",
+        "mongo_atlas": true,
+        "data": [
+            {
+                "fields": {
+                    "state": 0,
+                    "client": 1
+                },
+                "filters": {
+                    "tier_and_details": 0
+                }
+            }
+        ],
+        "commit_strategy": {
+            "strategy": "update",
+            "updates": {
+                "state": 1
+            }
+        }
+    },
+    "TARGET_FILE":{
+      "path": "files/output/output.txt"
+    }
+}

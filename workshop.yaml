@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: antpy
+  name: demo-file-mongodb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-file-mongodb
+  template:
+    metadata:
+      labels:
+        app: demo-file-mongodb
+    spec:
+      containers:
+      - image: acrseti.azurecr.io/demo:v1
+        name: demo-file-mongodb
+        resources:
+          requests:
+            memory: "200Mi"
+            cpu: "100m"
+          limits:
+            memory: "500Mi"
+            cpu: "400m"
+      restartPolicy: Always
