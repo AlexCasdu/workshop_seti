@@ -18,9 +18,9 @@ spec:
         name: demo-file-mongodb
         resources:
           requests:
-            memory: "200Mi"
-            cpu: "100m"
+            memory: "50Mi"
+            cpu: "10m"
           limits:
-            memory: "500Mi"
-            cpu: "400m"
+            memory: "100Mi"
+            cpu: "50m"
       restartPolicy: Always
