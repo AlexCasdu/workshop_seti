@@ -9,7 +9,7 @@
         "data": [
             {
                 "fields": {
-                    "state": 0,
+                    "state": 1,
                     "client": 1
                 },
                 "filters": {
@@ -20,7 +20,7 @@
         "commit_strategy": {
             "strategy": "update",
             "updates": {
-                "state": 1
+                "state": 0
             }
         }
     },
